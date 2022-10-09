@@ -7,62 +7,62 @@
     <title>Portfolio web page</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
     
 </head>
 
 <body>
-             <!--nav bar section / Header Section-->
+    <!--nav bar section / Header Section-->
     <header>
+    <section >
+      <div  class="nav-container" class="top-container">
         <nav>
             <ul>
                <li><a href="#index">Home</a></li> 
-                <li><a target="_blank" href="./contact.html">Contact</a></li>
+                <li><a href="#getintouch">Contact</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#resume">Resume</a></li>
                <li> <a href="#work">Work</a></li>
+               <li><a href="#skills">Skills</a></li>
             </ul>
         </nav>
-
-
-                         <!--Adding Image--> 
-
-    <div>
-       
-        <img src="./images/fat_daly.png" alt="fatma_profile_picture"  width="100px">
-    
-    </div>
-    </header>
-
-                         <!--Home section-->
-
-    <main>
-    <section id="home">
-      <h2>Fatma Daly</h2>
-      <p>Bigenner <strong> FullStackJS Web Developer</strong></p>
+        <div class="title-text">
+        <img class="top-cloud" src="./images/cloud.png" alt="cloud">
+          <h1>I'm Fatma.</h1>
+          <h2> a programmer.</h2>
+        </div>
+        <img class="bottom-cloud" src="./images/cloud.png" alt="cloud">
+        <img class="mountain" src="./images/mountain.png" alt="mountain-img">
+      </div>
     </section>
+</header>
+
+<main>
+                   <!--Adding Image / Home section --> 
+<section id="home">
+    <div class="middle-container">
+        <img src="./images/fat_daly.png" class="profile" alt="fatma_profile_picture">
+      <h2>Hello</h2>
+      <p class="intro">Bigenner <strong> FullStackJS Web Developer</strong></p>
+    </div>
+    </section>
+    <hr>
 
                         <!--Resume section--> 
 
 <section id="resume">
    <div>
-    <h1>Resume</h1>
+    <h2>Resume</h2>
     <p> I am Fatma Daly, graduated as a master in embedded systems and bigenner FullStack JS web developer.</p>
-    <p>I am passionate about web and the new technologies, i had the chance to develop my skills within a tranaing center called Gomycode. </p>
+    <p>I am passionate about web and the new technologies, i had the chance to develop my skills within a trainaing center called Gomycode. </p>
     <p>I want to eventually become a web FullStackJS developer.</p>
-    <iframe width="560" 
-    height="315" src="https://www.youtube.com/embed/V9Paql4xbn4" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-    </iframe>
    </div>
-   <br>
+   <hr>
               <!--About section-->
 <section id="about">
-    <h1>About</h1>
+    <h2>About</h2>
    <div>
-   <table cellspacing="20" style="border:solid">
+   <table class="about-table">
     <tr>
         <th>Studies</th>
         <th>Faculty</th>
@@ -78,34 +78,72 @@
         <td>Enetcom Sfax</td>
         <td>2020</td>
     </tr>
+    <tr>
+        <td>The Complete 2022 Web Development Bootcamp :Udemy</td>
+        <td>Online Udemy Course </td>
+        <td>2022</td>
+    </tr>
+    <tr>
+        <td>The Complete 2022 Web Development Bootcamp : Gomycode</td>
+        <td>Hackerspace Gomycode Gafsa</td>
+        <td>2020</td>
+    </tr>
 </table>
-<br>
-   <dl>
-    <dt>Past training</dt>
-      <dd>The Complete 2022 Web Development Bootcamp :Udemy</dd> 
-      <dd> The Complete 2022 Web Development Bootcamp : Gomycode</dd> 
-    </dl>
-
 </div>
 </section>
+
+<hr>
+                          <!--skills section-->
+
+<section id="skills">
+    <div>
+    <h2> Skills</h2>
+        <table>
+            <tr>
+                <td>HTML</td>
+                <td>⭐️⭐️⭐️⭐️⭐️</td>
+            </tr>
+<tr>
+    <td>CSS</td>
+    <td>⭐️⭐️⭐️⭐️</td>
+</tr>
+<tr>
+    <td>JAVASCRIPT</td>
+    <td>⭐️⭐️⭐️</td>
+</tr>
+</table>
+</div>
+</section>
+
+<hr>
+
 <!--Work section-->
-<section id="work">
-    <h1>Work Experience</h1>
+<section id="work" class="section-work">
+    <h2>Work Experience</h2>
     <p>Still not working yet. I am looking for my first job's opportunity.</p>
 
 </section>
+<hr>
+<!--ContactMe Div-->
+<div class="contact-me" id="getintouch">
+    <h2>Get In Touch</h2>
+    <h3>If you want to get in touch with me.</h3>
+    <p class="contact-message">Click on the button below</p>
+    <a class="btn" href="mailto:dali.fatma20@gmail.com.com">CONTACT ME</a>
+  </div>
+</div>
 
-
-<br>
 </main>
 
 <!--footer section-->
+
+<div class="bottom-container">
 <footer style="padding: 5% 15%; text-align: center;">
-<i class="fa-brands fa-facebook" style="color: blue; font-size:30px"></i>
+<i class="fa-brands fa-facebook" style="font-size:30px"></i>
 <i class="social-icon fa-brands fa-instagram" style="margin: 20px;"></i>
 <i class="social-icon fa-solid fa-envelope" style="margin: 10px;"></i>
-<p>© Daly Fatma</p>
-</footer>
+<p class="copyright">©Copyright Daly Fatma</p> 
+</footer> 
    
 </body>
 </html>
